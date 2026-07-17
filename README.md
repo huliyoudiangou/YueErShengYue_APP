@@ -20,7 +20,7 @@
 
 ## 下载安装
 
-> 推荐从 Releases 下载正式包：https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v0.4.7
+> 推荐从 Releases 下载正式包：https://github.com/huliyoudiangou/YueErShengYue_APP/releases
 
 
 | 项目 | 说明 |
@@ -28,7 +28,7 @@
 | **当前版本** | `0.4.7`（versionCode 22） |
 | **包名** | `com.yueer.shengyue` |
 | **系统要求** | Android 8.0+（API 26） |
-| **安装包** | [Releases · v0.4.7 APK](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v0.4.7/YueErShengYue-0.4.7-release.apk) |
+| **安装包** | [Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases) |
 
 > 首次安装如提示「未知来源」，请在系统设置中允许安装此应用。  
 > **安装包仅通过 [GitHub Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases) 提供 APK。**  
