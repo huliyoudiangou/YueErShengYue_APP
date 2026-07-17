@@ -20,15 +20,15 @@
 
 ## 下载安装
 
-> 推荐从 Releases 下载正式包：https://github.com/huliyoudiangou/YueErShengYue_APP/releases
+> 推荐从 Releases 下载正式包：https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v0.4.8
 
 
 | 项目 | 说明 |
 |------|------|
-| **当前版本** | `0.4.7`（versionCode 22） |
+| **当前版本** | `0.4.8`（versionCode 23） |
 | **包名** | `com.yueer.shengyue` |
 | **系统要求** | Android 8.0+（API 26） |
-| **安装包** | [Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases) |
+| **安装包** | [Releases · v0.4.8 APK](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v0.4.8/YueErShengYue-0.4.8-release.apk) |
 
 > 首次安装如提示「未知来源」，请在系统设置中允许安装此应用。  
 > **安装包仅通过 [GitHub Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases) 提供 APK。**  
@@ -132,9 +132,9 @@
 
 ## 更新记录（近期）
 
+- **0.4.8** — 应用内检查更新，提示跳转 GitHub Releases 下载  
 - **0.4.7** — 登录页协议/主机/端口紧凑布局（主机为主、点击不撑高）；粘贴自动识别协议；Android Auto；正式 release 包  
 - **0.4.6** — 暂停 / 杀进程后保留悬浮窗；播放器标识 `YueErShengYue` / `Android`  
-- **0.4.5** — 悬浮窗关闭更快；保留片头片尾设置  
 
 完整条目见应用内 **设置 → 关于**（仅显示最近 3 条）。
 
