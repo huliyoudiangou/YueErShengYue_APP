@@ -1,0 +1,23 @@
+﻿# Closed-source distribution repo:
+# - Keep only README / screenshots / assets
+# - APK goes to GitHub Releases ONLY (never commit APK or source)
+*
+!README.md
+!screenshots/
+!screenshots/**
+!assets/
+!assets/**
+!.gitignore
+
+# never allow source / build / secrets even if someone force-adds
+**/*.kt
+**/*.java
+**/*.kts
+**/src/
+**/app/
+**/.gradle/
+**/build/
+**/*.keystore
+**/signing.properties
+**/*.apk
+**/*.aab
