@@ -1,4 +1,4 @@
-﻿# 悦耳声阅 · YueErShengYue
+# 悦耳声阅 · YueErShengYue
 
 <p align="center">
   <img src="assets/icon.jpg" alt="悦耳声阅" width="128" />
@@ -20,8 +20,8 @@
 
 | | |
 |--|--|
-| **当前版本** | `0.5.1` (versionCode 26) |
-| **正式包** | [YueErShengYue-0.5.1-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v0.5.1/YueErShengYue-0.5.1-release.apk) |
+| **当前版本** | `0.5.2` (versionCode 27) |
+| **正式包** | [YueErShengYue-0.5.2-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v0.5.2/YueErShengYue-0.5.2-release.apk) |
 | **全部版本** | [GitHub Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases) |
 
 > 仅发布 **APK**，不提供源码。请从 **Releases** 下载安装包。
@@ -35,7 +35,7 @@
 
 ### 校验（可选）
 ```
-sha256: 760e79a957a615dd11313e325be34faf8f3f85c592d8d3f676b8ccbe3feef901
+sha256: 7aaffdeec27026b2214c035d62c4554c197cbf9aebd9d4f2c3dae4325db225ad
 ```
 
 ---
@@ -56,7 +56,7 @@ sha256: 760e79a957a615dd11313e325be34faf8f3f85c592d8d3f676b8ccbe3feef901
 
 ### 书库与发现
 - 首页：继续播放 / 最近添加 / 推荐 / 再次收听 / 我的收藏
-- **继续播放长按移除**（清服务器进度）
+- **继续播放长按移除**（清服务器进度；旧书/非正在播放同样生效）
 - **首页本地快照**冷启动先出书单再后台刷新
 - 书库三列网格与排序筛选、全局搜索
 
@@ -70,6 +70,11 @@ sha256: 760e79a957a615dd11313e325be34faf8f3f85c592d8d3f676b8ccbe3feef901
 ---
 
 ## 版本记录
+
+### 0.5.2
+- 修复「继续播放」移除失败：很早听过、当前未播放的书也可移出
+- 本地持久墓碑 + 服务器 hide/DELETE 清除，杀进程/重开不再回弹
+- 再次播放同一本后会重新出现在继续播放
 
 ### 0.5.1
 - 首页本地快照秒开，后台刷新
