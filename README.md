@@ -1,161 +1,176 @@
-# 悦耳声阅 · YueErShengYue
+# YueErShengYue
 
 <p align="center">
-  <img src="assets/icon.jpg" width="120" alt="悦耳声阅 App Icon" />
+  <img src="assets/icon.jpg" width="120" alt="YueErShengYue App Icon" />
 </p>
 
 <p align="center">
-  <b>Audiobookshelf 安卓听书客户端</b><br/>
-  黑金暗色 · 薄荷绿亮色 · 流媒体播放 · 进度双向同步
+  <b>Audiobookshelf Android audiobook client</b><br/>
+  Black &amp; gold dark · Mint green light · Streaming playback · Two-way progress sync
 </p>
 
 <p align="center">
-  <a href="#下载安装">下载安装</a> ·
-  <a href="#功能亮点">功能亮点</a> ·
-  <a href="#界面预览">界面预览</a> ·
-  <a href="#使用说明">使用说明</a>
+  <b>English</b> · <a href="README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="#download--install">Download</a> ·
+  <a href="#features">Features</a> ·
+  <a href="#screenshots">Screenshots</a> ·
+  <a href="#how-to-use">How to use</a>
 </p>
 
 ---
 
-## 下载安装
+## Download &amp; install
 
-| 项目 | 说明 |
-|------|------|
-| **当前版本** | `0.5.5`（versionCode 30） |
-| **包名** | `com.yueer.shengyue` |
-| **系统要求** | Android 8.0+（API 26） |
-| **安装包** | 见 [GitHub Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/latest) |
+| Item | Details |
+|------|---------|
+| **Current version** | `0.5.5` (versionCode 30) |
+| **Package name** | `com.yueer.shengyue` |
+| **Requirements** | Android 8.0+ (API 26) |
+| **APK** | See [GitHub Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/latest) |
 
-> 首次安装如提示「未知来源」，请在系统设置中允许安装此应用。  
-> 本仓库仅提供 **介绍文档 + 正式 release APK + 界面截图**，不含完整源码。
-
----
-
-## 应用简介
-
-**悦耳声阅** 是一款面向 [Audiobookshelf](https://www.audiobookshelf.org/) 的安卓听书客户端。  
-完全按 [官方 API](https://api.audiobookshelf.org/) 对接：登录、书库、播放会话、进度回传；**不提供整本下载**，只做流式缓存，轻量、干净、专注听。
-
-自行填写 Audiobookshelf 服务器地址（支持协议选择与端口），使用账号密码登录后即可听书。
+> On first install, allow installs from unknown sources if the system asks.  
+> This repository publishes **docs + official release APK + screenshots only**. Full source code is **not** open-sourced here.
 
 ---
 
-## 功能亮点
+## About
 
-### 🎧 播放体验
-- **倍速播放**：0.5x ~ 3.0x 可调
-- **章节列表**：快速跳转任意章节
-- **快进 / 快退 10 秒**
-- **睡眠定时**：小闹钟图标（主题色），最长 8 小时，封面角显示剩余倒计时；暂停时倒计时同步暂停
-- **每书片头片尾**：详情页按秒数输入设置（每章生效，本地保存）
-- **进度展示切换**：全书总进度 / 当前章节进度
-- **悬浮迷你播放条** + **系统通知栏媒体控件**
-- 点击开始播放后 **直接进入播放页**
-- 暂停或关闭应用后再次打开，**悬浮窗可恢复**
+**YueErShengYue** is an Android audiobook client for [Audiobookshelf](https://www.audiobookshelf.org/).  
+It follows the [official API](https://api.audiobookshelf.org/): login, libraries, playback sessions, and progress upload.  
+**Whole-book download is not supported** — only streaming cache for a lightweight, focused listening experience.
 
-### 📚 书库与发现
-- **首页四区**：继续播放 · 最近添加 · 推荐图书 · 再次收听
-- **书库浏览**：横向封面 + 书名，分类与首页并排
-- **全局搜索**：跨全部媒体库索引结果
-- **详情页**：封面、演播、简介（可展开）、片头片尾设置
-- 书名过长 **单行跑马灯**；演播展示如「演播：张三」
-
-### 🔗 登录与服务器
-- **协议选择**：左侧 `https://` / `http://` 下拉（默认 https）
-- **主机地址**：中间填写域名或 IP；粘贴完整 URL 时自动识别协议并拆分
-- **端口**：右侧可改（默认 `443`）
-- 未带协议时使用所选协议补齐；已带协议时自动同步到下拉选项
-
-### 🔄 同步与缓存
-- 播放中约 **每 15 秒** 向服务器同步进度
-- 暂停 / 结束自动回传
-- **流式章节缓存**（非整本下载）：打开后向前预缓存，听完章节丢弃，保持缓存水位
-- 缓存上限 **0–500 MB**（默认 200；0=关闭流式预缓存；预缓存当前章 + 后两章）
-- 设置内可清除 **封面缓存** / **流媒体缓存**
-
-### 🎨 界面与多语言
-- **默认黑金暗色主题**
-- **薄荷绿亮色主题**（圆润 R 角 + 轻毛玻璃）
-- 语言：**English / 简体中文 / 繁體中文**（登录页与设置均可切换，默认英语）
-- 窄长屏布局优化
-
-### 🚗 车载
-- 支持 **Android Auto** 媒体库浏览与播放
-- 需手机具备完整 Android Auto 环境；部分国行机仅有 AA 壳时功能受限
-
-### 🔐 边界说明
-- Token 本地加密存储
-- **不做**：整本下载、离线整库、服务器管理、电子书阅读
-- 仅流媒体播放，专注听书
+Enter your own Audiobookshelf server address (protocol + host + port), then sign in with your account.
 
 ---
 
-## 界面预览
+## Features
 
-| 首页 | 书籍详情 |
-|:----:|:--------:|
-| ![首页](screenshots/01_home.png) | ![详情](screenshots/02_detail.png) |
+### Playback
+- **Speed control**: 0.5x – 3.0x
+- **Chapter list**: jump to any chapter
+- **Seek ±10 seconds**
+- **Sleep timer**: theme-colored alarm icon, up to 8 hours, remaining countdown on the cover; countdown pauses when playback pauses
+- **Per-book intro/outro skip**: set seconds on the detail page (per chapter, stored locally)
+- **Progress mode**: whole-book total progress / current chapter progress
+- **Mini floating player** + **system media notification controls**
+- Tapping play opens the **full player page** directly
+- After pause or app kill, the **mini player can restore** on next open
+- **Speed model**: Settings = global default; player can use **Global** (follow Settings) or a **per-book** override
 
-| 播放页 | 书库 |
-|:------:|:----:|
-| ![播放](screenshots/03_player.png) | ![书库](screenshots/04_library.png) |
+### Library & discovery
+- **Home sections**: Continue · Recently added · Recommended · Listen again · Favorites
+- **Library browse**: cover + title grid (3 columns), infinite scroll
+- **Library sort/filter**: title, narrator, created/modified/added time; tap again to toggle asc/desc
+- **Global search** across all media libraries
+- **Detail page**: cover, narrator, expandable description, intro/outro skip
+- Long titles use a **single-line marquee**; narrator shown as “Narrator: …”
+- **Favorites**: heart on the detail page; list under “My favorites” on home
+- Long-press **Continue** items to remove and clear progress
 
-| 设置 |
-|:----:|
-| ![设置](screenshots/05_settings.png) |
+### Login & server
+- **Protocol**: left dropdown `https://` / `http://` (default https)
+- **Host**: domain or IP; pasting a full URL auto-detects protocol
+- **Port**: editable (default `443`)
+- Protocol is applied when missing; auto-synced when already present in the URL
 
-> 截图来自真机预览（主题与语言以本机设置为准）。
+### Sync & cache
+- Progress sync about **every 15 seconds** while playing
+- Auto upload on pause / stop
+- **Streaming chapter cache** (not whole-book download): prefetch forward, drop finished chapters, keep cache level
+- Cache limit **0–500 MB** (default 200; 0 = disable streaming prefetch; prefetch **current + next 2 chapters**)
+- Clear **cover cache** / **stream cache** in Settings
+
+### UI & languages
+- **Default black & gold dark theme**
+- **Mint green light theme** (rounded corners + light frosted glass)
+- Languages: **English / Simplified Chinese / Traditional Chinese** (login + Settings; default English)
+- Layout tuned for tall narrow phones
+
+### Car
+- **Android Auto** library browse & playback
+- Requires a complete Android Auto environment; some region-locked devices may be limited
+
+### Boundaries
+- Token encrypted at rest
+- **Not supported**: whole-book download, offline full library, server admin, ebook reading
+- Streaming only — listen-focused
 
 ---
 
-## 使用说明
+## Screenshots
 
-1. 安装 APK 并打开应用  
-2. 在登录页选择语言  
-3. 选择协议（https/http），填写 **主机地址** 与 **端口**（默认 443），再填写用户名 / 密码  
-4. 登录后进入 **首页** 浏览：继续播放 / 最近添加 / 推荐 / 再次收听  
-5. 点进书籍 → 详情页可设片头片尾 → **开始播放** 直接进入播放页  
-6. 播放页调节倍速、睡眠定时、章节；通知栏可后台控制  
-7. 在 **设置** 中切换主题、语言、缓存大小，或清除封面 / 流媒体缓存  
+| Home | Book detail |
+|:----:|:-----------:|
+| ![Home](screenshots/01_home.png) | ![Detail](screenshots/02_detail.png) |
 
-### 进度同步（对用户透明）
-- 开始播放会创建服务器会话  
-- 播放中定期同步，暂停 / 结束自动回传  
-- 与服务器进度冲突时，以更新时间较新的一方为准  
+| Player | Library |
+|:------:|:-------:|
+| ![Player](screenshots/03_player.png) | ![Library](screenshots/04_library.png) |
 
----
+| Settings |
+|:--------:|
+| ![Settings](screenshots/05_settings.png) |
 
-## 更新记录（近期）
-
-- **0.5.5** — 全局默认倍速对未单独设置的书始终生效（含播放中改设置 + 打开竞态修复）；推荐图书按本地自然日每日更新一次（缓存优先）
-- **0.5.4** — 设置页全局默认倍速 + 播放页「全局」/ 本书覆盖；推荐每日一次
-- **0.5.3** — 睡眠定时改为主题色小闹钟；缓存 0–500 MB（默认 200）；流式预缓存当前章 + 后两章  
-- **0.5.2** — 修复「继续播放」移除失败（本地墓碑 + 服务器清除，杀进程不回弹）  
-- **0.5.1** — 首页本地快照秒开；升级保留片头片尾与收藏；长按移出继续播放  
-
-完整条目见应用内 **设置 → 关于**（仅显示最近 3 条）。  
-安装包请到 [Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases) 下载。
+> Screenshots from a physical device (theme/language follow local settings).
 
 ---
 
-## 反馈与作者
+## How to use
+
+1. Install the APK and open the app  
+2. Choose language on the login page  
+3. Select protocol (https/http), enter **host** and **port** (default 443), then username / password  
+4. After login, use **Home**: Continue / Recently added / Recommended / Listen again / Favorites  
+5. Open a book → set intro/outro on the detail page if needed → **Play** goes to the player  
+6. On the player: speed, sleep timer, chapters; control from the notification while backgrounded  
+7. In **Settings**: theme, language, cache size, clear cover / stream cache  
+
+### Progress sync (transparent)
+- Starting playback creates a server session  
+- Periodic sync while playing; auto upload on pause / end  
+- On conflict, the side with the newer update time wins  
+
+### In-app update
+- The app checks GitHub Releases for a newer version  
+- You can update in-app (download + system install page, SHA-256 verified)  
+- Browser download is always available as fallback  
+- No forced updates  
+
+---
+
+## Recent changelog
+
+- **0.5.5** — Global default speed always applies to books without override (live Settings change + open race fix); recommended shelf refreshes once per local calendar day (cache-first)  
+- **0.5.4** — Settings global default speed + player “Global” / per-book override; recommended once per day  
+- **0.5.3** — Sleep timer theme-colored alarm icon; cache 0–500 MB (default 200); stream prefetch current + next 2 chapters  
+- **0.5.2** — Fix Continue removal failing (local tombstone + server clear; survives process kill)  
+- **0.5.1** — Home local snapshot for faster open; keep intro/outro & favorites across upgrades; long-press remove from Continue  
+
+Full recent entries: in-app **Settings → About** (latest 3 only).  
+Download APKs from [Releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases).
+
+---
+
+## Feedback & author
 
 | | |
 |--|--|
-| 作者 | **makizhang** |
-| 反馈与建议 | Telegram [@makichat_bot](https://t.me/makichat_bot) |
+| Author | **makizhang** |
+| Feedback | Telegram [@makichat_bot](https://t.me/makichat_bot) |
 
-欢迎试用与建议。若安装或登录异常，请附上系统版本与现象描述。
-
----
-
-## 许可证与声明
-
-- 本客户端对接官方 Audiobookshelf REST API，与 ABS 官方项目无隶属关系。  
-- 请仅使用你有权访问的服务器与账号，遵守当地法律法规与版权规定。  
-- 本仓库发布物：**README 介绍 + 正式版 APK + 界面截图**。  
+Feedback welcome. If install or login fails, please include Android version and a short description.
 
 ---
 
-<p align="center">悦耳声阅 · 用耳朵丈量世界</p>
+## License & notice
+
+- This client uses the official Audiobookshelf REST API and is **not** affiliated with the ABS project.  
+- Only use servers and accounts you are authorized to access; follow local laws and copyright rules.  
+- This repository ships: **README docs + official APK + screenshots**.  
+
+---
+
+<p align="center">YueErShengYue · Measure the world with your ears</p>
