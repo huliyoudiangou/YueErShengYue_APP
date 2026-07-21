@@ -57,7 +57,7 @@ Release page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShe
 
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.0-release.apk` | `695ADF9D1D3B4560E6697FFE20DC1EE8BC29FB1D73983FF35D38DE3E2FF272C2` |
+| `YueErShengYue-1.0.0-release.apk` | `AF00CC85D6CBE45AB4C13C913494AEAD10E4DF79ECF2ABC11B2F5D9617083270` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell example:
