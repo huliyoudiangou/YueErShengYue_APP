@@ -79,6 +79,7 @@ Install or run the package after its calculated hash matches the corresponding v
 - **Home page loads automatically on first entry** — no manual refresh needed.
 - **Cache-first on re-entry** for a smoother, faster home page, with a silent background refresh.
 - Fixed stale cached recommendations / recently added lists.
+- **Sleep timer can auto-exit the app** when the timed duration ends.
 - **Player auto-reconnect** when the player is not ready — no need to restart the app.
 - Faster first-screen response for **Continue Listening / Listen Again**.
 - Fixed a cold-start session-commit latch issue for the first play.
