@@ -6,7 +6,7 @@
 
 **YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on a clean audiobook experience with streaming playback, library browsing, and progress synchronization.
 
-**Current stable release: 1.0.3** — Android `versionCode` **49**. Windows portable package remains **1.0.0** for now.
+**Current Android stable release: 1.0.4** — Android `versionCode` **50**. Windows portable package remains **1.0.0** for now.
 
 ---
 
@@ -14,14 +14,14 @@
 
 | Platform | Package | Requirements | File |
 |----------|---------|--------------|------|
-| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.3-release.apk` |
+| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.4-release.apk` |
 | **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` |
 
 | Identifier | Value |
 |------------|-------|
 | Application ID | `com.yueer.shengyue` |
-| Android version name | `1.0.3` |
-| Android version code | `49` |
+| Android version name | `1.0.4` |
+| Android version code | `50` |
 | Windows package version | `1.0.0` |
 | Android minSdk / targetSdk | **26** / **35** |
 
@@ -29,7 +29,7 @@
 
 ## Download and Install
 
-Android release page: **[YueErShengYue 1.0.3](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.3)**
+Android release page: **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
 Windows package page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
@@ -37,12 +37,12 @@ Windows package page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/
 
 | Platform | Download |
 |----------|----------|
-| Android | [YueErShengYue-1.0.3-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.3/YueErShengYue-1.0.3-release.apk) |
+| Android | [YueErShengYue-1.0.4-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-1.0.4-release.apk) |
 | Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.0.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.0/YueErShengYue-Windows-x86_64-Portable-1.0.0.zip) |
 
 ### Android
 
-1. Download `YueErShengYue-1.0.3-release.apk`.
+1. Download `YueErShengYue-1.0.4-release.apk`.
 2. Verify the SHA-256 checksum below.
 3. Open the APK on the device. If Android requests permission to install apps from this source, enable it in system settings.
 4. Launch YueErShengYue, select a language, enter the Audiobookshelf server address and account credentials, then sign in.
@@ -60,19 +60,28 @@ Windows package page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/
 
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.3-release.apk` | `F83D2883007463160DF54DDCBAD68911CF516344817E890D36875E684BD8824E` |
+| `YueErShengYue-1.0.4-release.apk` | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell example:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.3-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.4-release.apk
 Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.0.zip
 ```
 
 Install or run the package after its calculated hash matches the corresponding value above.
 
 ---
+
+## What's New in 1.0.4
+
+- **Android performance and UX optimizations**: more stable cold start, cache-first home/library loading, and automatic network fallback when cache reads fail.
+- **Fixed first-entry hangs**: home/library no longer stay stuck when the local cache cannot be read.
+- **Restored home background refresh**: cached shelves appear first, then a silent refresh updates Continue Listening / Recently Added / Recommendations / Listen Again.
+- **Playback loading optimizations**: parallel metadata fetching, asynchronous cache player startup, and reduced prefetch contention.
+- **Frosted-glass dock and navigation insets**: unified rounded corners, compact height, and proper support for 3-button navigation.
+- **Live cache adjustments**: cache size changes apply immediately and stream-cache clearing uses the safe in-service transaction.
 
 ## What's New in 1.0.3
 
@@ -178,6 +187,7 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
+| **1.0.4** | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets |
 | **1.0.3** | Android-only update: home auto-load + cached first re-entry, recommended/recently-added stale cache fix, player auto-reconnect, Continue Listening / Listen Again response + cold-start session latch fix |
 | 1.0.1 | Android-only update: four themes, glass UI polish, floating dock, speed dialog refinements, sound enhancement default-on, loading/stability work |
 | 1.0.0 | Android and Windows synchronized launch; Windows wheel consistency; stability and performance refinements |
