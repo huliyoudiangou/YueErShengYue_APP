@@ -6,7 +6,7 @@
 
 **悦耳声阅**是一款面向 **Android 与 Windows** 的 [Audiobookshelf](https://www.audiobookshelf.org/) 客户端，提供简洁的有声书体验，包括流媒体播放、书库浏览与进度同步。
 
-**当前 Android 稳定版：1.0.4** — Android `versionCode` 为 **50**。Windows 便携版暂时仍为 **1.0.0**。
+**当前稳定版：1.0.4**（Android 与 Windows 同步）— Android `versionCode` 为 **50**。Windows 便携版已同步更新至 **1.0.4**。
 
 ---
 
@@ -15,30 +15,30 @@
 | 平台 | 软件包 | 系统要求 | 文件名 |
 |------|--------|----------|--------|
 | **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.4-release.apk` |
-| **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` |
+| **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` |
 
 | 标识 | 值 |
 |------|----|
 | applicationId / 包名 | `com.yueer.shengyue` |
 | Android 版本名称 | `1.0.4` |
 | Android 版本代码 | `50` |
-| Windows 包版本 | `1.0.0` |
+| Windows 包版本 | `1.0.4` |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## 下载与安装
 
-Android 正式发布页：**[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+1.0.4 正式发布页（Android + Windows）：**[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
-Windows 软件包发布页：**[悦耳声阅 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
+旧版 Windows 1.0.0 软件包：**[悦耳声阅 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
 ### 直接下载
 
 | 平台 | 下载 |
 |------|------|
 | Android | [YueErShengYue-1.0.4-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-1.0.4-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.0.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.0/YueErShengYue-Windows-x86_64-Portable-1.0.0.zip) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.4.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-Windows-x86_64-Portable-1.0.4.zip) |
 
 ### Android
 
@@ -49,7 +49,7 @@ Windows 软件包发布页：**[悦耳声阅 1.0.0](https://github.com/huliyoudi
 
 ### Windows 便携版
 
-1. 从 **1.0.0** 发布页下载 `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip`（1.0.1 与 1.0.3 均未更新 Windows）。
+1. 从 **1.0.4** 发布页下载 `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip`（旧版 1.0.0 便携包仍保留在 1.0.0 发布页；1.0.1 与 1.0.3 未更新 Windows）。
 2. 使用下方 SHA-256 校验文件。
 3. 将压缩包解压到本地目录，建议使用路径较短且具备常规写入权限的位置。
 4. 运行 `YueErShengYue.exe`。请保持 `app/`、`runtime/` 及相关文件原有的相对目录结构。
@@ -61,13 +61,14 @@ Windows 软件包发布页：**[悦耳声阅 1.0.0](https://github.com/huliyoudi
 | 文件 | SHA-256 |
 |------|---------|
 | `YueErShengYue-1.0.4-release.apk` | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip`（旧版） | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell 示例：
 
 ```powershell
 Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.4-release.apk
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.0.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.4.zip
 ```
 
 计算结果与上表对应值一致后，再安装或运行软件包。
@@ -76,12 +77,23 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.0.zip
 
 ## 1.0.4 更新内容
 
+### Android
+
 - **Android 性能与体验优化**：冷启动更稳，首页/书库优先读缓存，缓存读取异常自动回退网络加载。
 - **修复首次进入卡住问题**：不再因为缓存读取异常导致首页/书库停在加载中。
 - **首页后台刷新恢复**：有缓存时先展示缓存，再静默拉取新内容，继续播放/最近添加/推荐/再次收听可自动更新。
 - **播放加载优化**：并行获取播放元数据，播放器缓存异步初始化，避免首播抢带宽。
 - **底部 Dock 毛玻璃与导航适配**：圆角与搜索框统一，紧凑高度，支持三键导航安全区。
 - **缓存实时生效**：调整缓存大小即时作用于播放服务，清流缓存使用服务内安全事务。
+
+### Windows（首次同步至 1.0.4）
+
+- **Windows 便携版与 Android 同步更新至 1.0.4**：1.0.1–1.0.3 期间停留在 1.0.0，本次补齐到当前版本。
+- **绿色 x86_64 便携包**：内置运行时，解压到任意目录即可运行，无需安装。
+- **mpv 播放引擎**：自动检测本机 mpv.exe（也可在「设置」中手动指定路径），支持 0.5x–3.0x 倍速（音调保持）与声音增强。
+- **迷你播放器修复**：快进 10 秒按钮不再变形；播放条底色改为主题着色（不再发白）；音量控件改为喜马拉雅风格横向胶囊，悬浮于喇叭图标正上方，点按/拖动调节、点按空白处收起。
+- **退出清理**：退出应用时可靠停止播放并结束 mpv 进程，音频不再残留后台；异常退出遗留的 mpv 会在下次启动时自动清理。
+- **最小化到托盘继续播放**，托盘菜单支持显示主窗口 / 退出。
 
 ## 1.0.3 更新内容
 
@@ -143,6 +155,7 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.0.zip
 
 - Android Auto 媒体库浏览与播放集成。
 - Windows 便携分发包内置运行时。
+- Windows 支持最小化到托盘继续播放，退出时可靠结束 mpv 播放进程。
 - Windows 各页面采用统一的鼠标滚轮方向。
 
 ---
@@ -187,7 +200,7 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.0.zip
 
 | 版本 | 摘要 |
 |------|------|
-| **1.0.4** | Android 性能与体验优化：缓存优先、加载兜底、Dock 毛玻璃、导航键适配 |
+| **1.0.4** | Android 性能与体验优化：缓存优先、加载兜底、Dock 毛玻璃、导航键适配；Windows 便携版同步至 1.0.4（mpv 引擎、迷你播放器修复、最小化到托盘、退出清理） |
 | **1.0.3** | 仅 Android 更新：首页自动加载 + 缓存优先二次进入、推荐/最近添加旧缓存修复、播放器自动重连、继续播放/再次收听响应与冷启动会话闩锁修复 |
 | 1.0.1 | 仅 Android 更新：四主题、毛玻璃与悬浮 Dock 打磨、倍速弹窗优化、声音增强默认开启、加载与稳定性提升 |
 | 1.0.0 | Android 与 Windows 同步首发；统一 Windows 滚轮体验；稳定性与性能优化 |

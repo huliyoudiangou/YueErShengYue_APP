@@ -6,7 +6,7 @@
 
 **YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on a clean audiobook experience with streaming playback, library browsing, and progress synchronization.
 
-**Current Android stable release: 1.0.4** — Android `versionCode` **50**. Windows portable package remains **1.0.0** for now.
+**Current stable release: 1.0.4** (Android and Windows) — Android `versionCode` **50**. The Windows portable package is now synchronized to **1.0.4** as well.
 
 ---
 
@@ -15,30 +15,30 @@
 | Platform | Package | Requirements | File |
 |----------|---------|--------------|------|
 | **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.4-release.apk` |
-| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` |
+| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` |
 
 | Identifier | Value |
 |------------|-------|
 | Application ID | `com.yueer.shengyue` |
 | Android version name | `1.0.4` |
 | Android version code | `50` |
-| Windows package version | `1.0.0` |
+| Windows package version | `1.0.4` |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## Download and Install
 
-Android release page: **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+1.0.4 release page (Android + Windows): **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
-Windows package page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
+Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
 ### Direct Downloads
 
 | Platform | Download |
 |----------|----------|
 | Android | [YueErShengYue-1.0.4-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-1.0.4-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.0.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.0/YueErShengYue-Windows-x86_64-Portable-1.0.0.zip) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.4.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-Windows-x86_64-Portable-1.0.4.zip) |
 
 ### Android
 
@@ -49,7 +49,7 @@ Windows package page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/
 
 ### Windows Portable
 
-1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` from the **1.0.0** release (Windows is not updated in 1.0.1 or 1.0.3).
+1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` from the **1.0.4** release (the Windows 1.0.0 package remains available on the 1.0.0 release page; Windows was not updated in 1.0.1 or 1.0.3).
 2. Verify the SHA-256 checksum below.
 3. Extract the archive to a local folder, preferably one with a short path and standard write permissions.
 4. Run `YueErShengYue.exe`. Keep the bundled `app/`, `runtime/`, and related files in their original relative structure.
@@ -61,13 +61,14 @@ Windows package page: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/
 | File | SHA-256 |
 |------|---------|
 | `YueErShengYue-1.0.4-release.apk` | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` (older) | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell example:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.4-release.apk
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.0.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.4.zip
 ```
 
 Install or run the package after its calculated hash matches the corresponding value above.
@@ -76,12 +77,23 @@ Install or run the package after its calculated hash matches the corresponding v
 
 ## What's New in 1.0.4
 
+### Android
+
 - **Android performance and UX optimizations**: more stable cold start, cache-first home/library loading, and automatic network fallback when cache reads fail.
 - **Fixed first-entry hangs**: home/library no longer stay stuck when the local cache cannot be read.
 - **Restored home background refresh**: cached shelves appear first, then a silent refresh updates Continue Listening / Recently Added / Recommendations / Listen Again.
 - **Playback loading optimizations**: parallel metadata fetching, asynchronous cache player startup, and reduced prefetch contention.
 - **Frosted-glass dock and navigation insets**: unified rounded corners, compact height, and proper support for 3-button navigation.
 - **Live cache adjustments**: cache size changes apply immediately and stream-cache clearing uses the safe in-service transaction.
+
+### Windows (first synchronized update to 1.0.4)
+
+- **Windows portable synced to 1.0.4** — it stayed on 1.0.0 through 1.0.1–1.0.3 and is now up to date.
+- **Green x86_64 package** with a bundled runtime: extract to any folder and run, no installer required.
+- **mpv playback engine**: auto-detects a local mpv.exe (or set a custom path in Settings), with pitch-preserving 0.5x–3.0x speed and sound enhancement.
+- **Mini player fixes**: repaired forward-10s button, theme-tinted bar chrome (no near-white panel), and a Ximalaya-style horizontal volume pill floating directly above the speaker icon.
+- **Clean exit**: playback and the mpv process stop reliably with the app; leftover mpv from an abnormal exit is reaped on the next start.
+- **Close-to-tray playback** with a tray menu (show main window / exit).
 
 ## What's New in 1.0.3
 
@@ -143,6 +155,7 @@ Install or run the package after its calculated hash matches the corresponding v
 
 - Android Auto media browsing and playback integration.
 - Windows portable distribution with a bundled runtime.
+- Windows close-to-tray playback, with reliable mpv cleanup on exit.
 - Unified mouse-wheel direction across Windows pages.
 
 ---
@@ -187,7 +200,7 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
-| **1.0.4** | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets |
+| **1.0.4** | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets; Windows portable synced to 1.0.4 (mpv engine, mini-player fixes, close-to-tray, clean exit) |
 | **1.0.3** | Android-only update: home auto-load + cached first re-entry, recommended/recently-added stale cache fix, player auto-reconnect, Continue Listening / Listen Again response + cold-start session latch fix |
 | 1.0.1 | Android-only update: four themes, glass UI polish, floating dock, speed dialog refinements, sound enhancement default-on, loading/stability work |
 | 1.0.0 | Android and Windows synchronized launch; Windows wheel consistency; stability and performance refinements |
