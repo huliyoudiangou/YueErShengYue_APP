@@ -6,7 +6,7 @@
 
 **YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on a clean audiobook experience with streaming playback, library browsing, and progress synchronization.
 
-**Current stable release: 1.0.4** (Android and Windows) — Android `versionCode` **50**. The Windows portable package is now synchronized to **1.0.4** as well.
+**Current stable release: 1.0.5** (Android and Windows) — Android `versionCode` **51**. Windows ships as a portable package and stays in lockstep at **1.0.5**.
 
 ---
 
@@ -14,22 +14,24 @@
 
 | Platform | Package | Requirements | File |
 |----------|---------|--------------|------|
-| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.4-release.apk` |
-| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` |
+| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.5-release.apk` |
+| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` |
 
 | Identifier | Value |
 |------------|-------|
 | Application ID | `com.yueer.shengyue` |
-| Android version name | `1.0.4` |
-| Android version code | `50` |
-| Windows package version | `1.0.4` |
+| Android version name | `1.0.5` |
+| Android version code | `51` |
+| Windows package version | `1.0.5` |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## Download and Install
 
-1.0.4 release page (Android + Windows): **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+1.0.5 release page (Android + Windows): **[YueErShengYue 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)**
+
+Older 1.0.4 release page: **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
 Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
@@ -37,19 +39,19 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | Platform | Download |
 |----------|----------|
-| Android | [YueErShengYue-1.0.4-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-1.0.4-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.4.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.4/YueErShengYue-Windows-x86_64-Portable-1.0.4.zip) |
+| Android | [YueErShengYue-1.0.5-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-1.0.5-release.apk) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) |
 
 ### Android
 
-1. Download `YueErShengYue-1.0.4-release.apk`.
+1. Download `YueErShengYue-1.0.5-release.apk`.
 2. Verify the SHA-256 checksum below.
 3. Open the APK on the device. If Android requests permission to install apps from this source, enable it in system settings.
 4. Launch YueErShengYue, select a language, enter the Audiobookshelf server address and account credentials, then sign in.
 
 ### Windows Portable
 
-1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` from the **1.0.4** release (the Windows 1.0.0 package remains available on the 1.0.0 release page; Windows was not updated in 1.0.1 or 1.0.3).
+1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` from the **1.0.5** release (the Windows 1.0.0 package remains available on the 1.0.0 release page).
 2. Verify the SHA-256 checksum below.
 3. Extract the archive to a local folder, preferably one with a short path and standard write permissions.
 4. Run `YueErShengYue.exe`. Keep the bundled `app/`, `runtime/`, and related files in their original relative structure.
@@ -60,18 +62,38 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.4-release.apk` | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
+| `YueErShengYue-1.0.5-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
+| `YueErShengYue-1.0.4-release.apk` (older) | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` (older) | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` (older) | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell example:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.4-release.apk
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.4.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.5-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 ```
 
 Install or run the package after its calculated hash matches the corresponding value above.
+
+---
+
+## What's New in 1.0.5
+
+### Android
+
+- **Faster tap-to-play**: the play path no longer blocks on a full library-item fetch — play-session metadata is used directly, cutting tap-to-sound from ~4.1s to ~1.4s on real devices.
+- **Bluetooth / car head-unit album art**: the media notification now carries inlined artwork bytes (cached, bounded fetch), so AVRCP head units that cannot fetch https URIs show covers again.
+- **Database integrity for existing installs**: the local database schema is aligned with the shipped 1.0.4 layout (per-account favorites v4), with a safe 3→4 migration for older installs — no more startup crash loops on upgrade.
+- **Safer updates**: in-app update downloads are now pinned to official GitHub hosts (every redirect hop verified).
+
+### Windows
+
+- **Session-hardened local stream proxy**: the built-in audio proxy now requires a per-session secret path and only relays the configured Audiobookshelf origin (fixes local confusion-deputy / SSRF exposure).
+- **Token hygiene**: playback candidates never attach the session token to non-Audiobookshelf hosts, and perf logs redact token query values.
+- **Crash-safe settings storage**: the settings file (holding the session token) is written atomically — a crash can no longer wipe the session.
+- **Faster tap-to-play** on Windows as well: play-session metadata is used directly instead of blocking on a full item fetch.
 
 ---
 
@@ -200,6 +222,7 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
+| **1.0.5** | Security & integrity hardening (stream proxy, token handling, update source pinning, DB schema alignment) + faster tap-to-sound on both platforms + Bluetooth album art |
 | **1.0.4** | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets; Windows portable synced to 1.0.4 (mpv engine, mini-player fixes, close-to-tray, clean exit) |
 | **1.0.3** | Android-only update: home auto-load + cached first re-entry, recommended/recently-added stale cache fix, player auto-reconnect, Continue Listening / Listen Again response + cold-start session latch fix |
 | 1.0.1 | Android-only update: four themes, glass UI polish, floating dock, speed dialog refinements, sound enhancement default-on, loading/stability work |

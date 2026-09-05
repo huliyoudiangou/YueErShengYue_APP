@@ -2,3 +2,27 @@
 *.apk
 *.aab
 !README.md
+
+# --- secrets: NEVER commit release signing identity ---
+app/yueer-release.keystore
+app/signing.properties
+*.jks
+*.keystore
+*.p12
+
+# --- local machine / build outputs ---
+local.properties
+.gradle/
+.kotlin/
+.idea/
+build/
+*/build/
+com/
+dist/
+accept_tmp/
+postfix-tmp/
+.dsh-vision-toolkit/
+.release-build-marker*.txt
+.release-build-meta*.json
+release-*-report-*.txt
+release-input-sha256-*.txt
