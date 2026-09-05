@@ -6,7 +6,7 @@
 
 **悦耳声阅**是一款面向 **Android 与 Windows** 的 [Audiobookshelf](https://www.audiobookshelf.org/) 客户端，提供简洁的有声书体验，包括流媒体播放、书库浏览与进度同步。
 
-**当前稳定版：1.0.6**（Android 与 Windows 同步）— Android `versionCode` 为 **52**。Windows 便携版同步更新至 **1.0.6**。
+**当前稳定版：1.0.5**（Android 与 Windows 同步）— Android `versionCode` 为 **51**。Windows 便携版同步更新至 **1.0.5**，另提供内置 mpv 的懒人包。
 
 ---
 
@@ -14,22 +14,24 @@
 
 | 平台 | 软件包 | 系统要求 | 文件名 |
 |------|--------|----------|--------|
-| **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.6-release.apk` |
-| **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.6.zip` |
+| **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.5-release.apk` |
+| **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` |
 
 | 标识 | 值 |
 |------|----|
 | applicationId / 包名 | `com.yueer.shengyue` |
-| Android 版本名称 | `1.0.6` |
-| Android 版本代码 | `52` |
-| Windows 包版本 | `1.0.6` |
+| Android 版本名称 | `1.0.5` |
+| Android 版本代码 | `51` |
+| Windows 包版本 | `1.0.5` |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## 下载与安装
 
-1.0.6 正式发布页（Android + Windows）：**[悦耳声阅 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)**
+1.0.5 正式发布页（Android + Windows）：**[悦耳声阅 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)**
+
+旧版发布页：**[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
 旧版发布页：**[悦耳声阅 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
@@ -39,19 +41,19 @@
 
 | 平台 | 下载 |
 |------|------|
-| Android | [YueErShengYue-1.0.6-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-1.0.6-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.6.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-Windows-x86_64-Portable-1.0.6.zip) |
+| Android | [YueErShengYue-1.0.5-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-1.0.5-release.apk) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) |
 
 ### Android
 
-1. 下载 `YueErShengYue-1.0.6-release.apk`。
+1. 下载 `YueErShengYue-1.0.5-release.apk`。
 2. 使用下方 SHA-256 校验文件。
 3. 在设备上打开 APK；若 Android 请求授权此来源安装应用，请在系统设置中允许。
 4. 启动悦耳声阅，选择语言，填写 Audiobookshelf 服务器地址和账号信息，然后登录。
 
 ### Windows 便携版
 
-1. 从 **1.0.6** 发布页下载 `YueErShengYue-Windows-x86_64-Portable-1.0.6.zip`（旧版 1.0.0 便携包仍保留在 1.0.0 发布页）。
+1. 从 **1.0.5** 发布页下载 `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip`，或选择内置 mpv 播放器的懒人包 `YueErShengYue-Windows-x86_64-Portable-1.0.5-with-mpv.zip`（无需另行安装 mpv；旧版 1.0.0 便携包仍保留在 1.0.0 发布页）。
 2. 使用下方 SHA-256 校验文件。
 3. 将压缩包解压到本地目录，建议使用路径较短且具备常规写入权限的位置。
 4. 运行 `YueErShengYue.exe`。请保持 `app/`、`runtime/` 及相关文件原有的相对目录结构。
@@ -62,32 +64,20 @@
 
 | 文件 | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.6-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
+| `YueErShengYue-1.0.5-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
 | `YueErShengYue-1.0.4-release.apk`（旧版） | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.6.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip`（旧版） | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip`（旧版） | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell 示例：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.6-release.apk
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.6.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.5-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 ```
 
 计算结果与上表对应值一致后，再安装或运行软件包。
-
----
-
-## 1.0.6 更新内容
-
-### Windows
-
-- **修复"播完一章就停止"**：章节播完时可能触发重复的结束事件，导致连跳章节或下一章加载被误取消。现已做到：章节结束后立即清除上一文件的播放状态（位置/时长），加载窗口内不再判定文件结束，并对重复事件去重。已用多章节有声书连续三轮自动化实测——一次结束事件只换一章，不再跳章、不再停住。
-
-### Android 与 Windows
-
-- **播放页新增音量控件**（Windows）：与迷你播放条同款的喜马拉雅式横向胶囊——点喇叭图标展开、点轨道跳转、拖动连续调节。
 
 ---
 
@@ -102,6 +92,9 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.6.zip
 
 ### Windows
 
+- **修复"播完一章就停止播放"**：章节播完时可能触发重复的"文件结束"事件，导致连跳章节，或下一章加载被误取消而停住。章节结束后立即清除上一文件的播放状态，加载窗口内不再判定结束，并对重复事件去重。已用多章节有声书连续三轮自动化实测：一次结束事件只换一章。
+- **播放页新增音量控件**：与迷你播放条同款的喜马拉雅式横向胶囊——点喇叭图标展开，点轨道跳转音量，拖动连续调节。
+- **新增内置 mpv 的懒人包**：`with-mpv` 便携包自带 mpv 播放器，解压即用，无需另行安装。
 - **本地音频代理加固**：内置音频代理要求每次会话的密钥路径，且只转发到已配置的 Audiobookshelf 源（修复本地混淆代理 / SSRF 暴露面）。
 - **令牌卫生**：播放候选不再向非 Audiobookshelf 主机附带会话令牌，性能日志中的令牌值已脱敏。
 - **设置文件崩溃安全**：保存会话令牌的设置文件改为原子写入——崩溃不再导致登录态丢失。
@@ -234,7 +227,6 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.6.zip
 
 | 版本 | 摘要 |
 |------|------|
-| **1.0.6** | 修复 Windows 端播完一章即停（章节结束竞态）；播放页新增音量控件 |
 | **1.0.3** | 仅 Android 更新：首页自动加载 + 缓存优先二次进入、推荐/最近添加旧缓存修复、播放器自动重连、继续播放/再次收听响应与冷启动会话闩锁修复 |
 | 1.0.1 | 仅 Android 更新：四主题、毛玻璃与悬浮 Dock 打磨、倍速弹窗优化、声音增强默认开启、加载与稳定性提升 |
 | 1.0.0 | Android 与 Windows 同步首发；统一 Windows 滚轮体验；稳定性与性能优化 |
