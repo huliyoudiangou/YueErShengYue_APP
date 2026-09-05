@@ -6,7 +6,7 @@
 
 **YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on a clean audiobook experience with streaming playback, library browsing, and progress synchronization.
 
-**Current stable release: 1.0.5** (Android and Windows) — Android `versionCode` **51**. Windows ships as a portable package and stays in lockstep at **1.0.5**.
+**Current stable release: 1.0.6** (Android and Windows) — Android `versionCode` **52**. Windows ships as a portable package and stays in lockstep at **1.0.6**.
 
 ---
 
@@ -14,24 +14,24 @@
 
 | Platform | Package | Requirements | File |
 |----------|---------|--------------|------|
-| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.5-release.apk` |
-| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` |
+| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.6-release.apk` |
+| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.6.zip` |
 
 | Identifier | Value |
 |------------|-------|
 | Application ID | `com.yueer.shengyue` |
-| Android version name | `1.0.5` |
-| Android version code | `51` |
-| Windows package version | `1.0.5` |
+| Android version name | `1.0.6` |
+| Android version code | `52` |
+| Windows package version | `1.0.6` |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## Download and Install
 
-1.0.5 release page (Android + Windows): **[YueErShengYue 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)**
+1.0.6 release page (Android + Windows): **[YueErShengYue 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)**
 
-Older 1.0.4 release page: **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+Older releases: **[1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
 Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
@@ -39,19 +39,19 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | Platform | Download |
 |----------|----------|
-| Android | [YueErShengYue-1.0.5-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-1.0.5-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) |
+| Android | [YueErShengYue-1.0.6-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-1.0.6-release.apk) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.6.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-Windows-x86_64-Portable-1.0.6.zip) |
 
 ### Android
 
-1. Download `YueErShengYue-1.0.5-release.apk`.
+1. Download `YueErShengYue-1.0.6-release.apk`.
 2. Verify the SHA-256 checksum below.
 3. Open the APK on the device. If Android requests permission to install apps from this source, enable it in system settings.
 4. Launch YueErShengYue, select a language, enter the Audiobookshelf server address and account credentials, then sign in.
 
 ### Windows Portable
 
-1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` from the **1.0.5** release (the Windows 1.0.0 package remains available on the 1.0.0 release page).
+1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.6.zip` from the **1.0.6** release (the Windows 1.0.0 package remains available on the 1.0.0 release page).
 2. Verify the SHA-256 checksum below.
 3. Extract the archive to a local folder, preferably one with a short path and standard write permissions.
 4. Run `YueErShengYue.exe`. Keep the bundled `app/`, `runtime/`, and related files in their original relative structure.
@@ -62,20 +62,32 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.5-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
+| `YueErShengYue-1.0.6-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
 | `YueErShengYue-1.0.4-release.apk` (older) | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.6.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` (older) | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` (older) | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
 
 PowerShell example:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.5-release.apk
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.6-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.6.zip
 ```
 
 Install or run the package after its calculated hash matches the corresponding value above.
+
+---
+
+## What's New in 1.0.6
+
+### Windows
+
+- **Fixed "playback stops after one chapter"**: finishing a chapter could emit a duplicate end-of-file event, double-advancing chapters or cancelling the next chapter's load mid-flight. The finished file's playback state (position/duration) is now invalidated immediately on end-of-file, end detection is suppressed while a file is still opening, and duplicate events are deduplicated. Verified with three consecutive automated multi-chapter runs: one end event advances exactly one chapter.
+
+### Android and Windows
+
+- **Volume control on the player page** (Windows): the same Ximalaya-style horizontal pill as the mini player — tap the speaker icon to expand, tap the track to jump, drag for continuous adjustment.
 
 ---
 
@@ -222,7 +234,7 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
-| **1.0.5** | Security & integrity hardening (stream proxy, token handling, update source pinning, DB schema alignment) + faster tap-to-sound on both platforms + Bluetooth album art |
+| **1.0.6** | Fixed Windows playback stopping after one chapter (chapter-end race); volume control added to the player page |
 | **1.0.4** | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets; Windows portable synced to 1.0.4 (mpv engine, mini-player fixes, close-to-tray, clean exit) |
 | **1.0.3** | Android-only update: home auto-load + cached first re-entry, recommended/recently-added stale cache fix, player auto-reconnect, Continue Listening / Listen Again response + cold-start session latch fix |
 | 1.0.1 | Android-only update: four themes, glass UI polish, floating dock, speed dialog refinements, sound enhancement default-on, loading/stability work |
