@@ -6,7 +6,7 @@
 
 **YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on a clean audiobook experience with streaming playback, library browsing, and progress synchronization.
 
-**Current stable release: 1.0.5** (Android and Windows) — Android `versionCode` **51**. Windows ships as a portable package and stays in lockstep at **1.0.5**; an all-in-one bundle with mpv included is also provided.
+**Current stable release: 1.0.6** (Android) — Android `versionCode` **52**. This release ships an Android APK only; the Windows portable package stays at **1.0.5** (all-in-one bundle with mpv included) and needs no update.
 
 ---
 
@@ -14,24 +14,24 @@
 
 | Platform | Package | Requirements | File |
 |----------|---------|--------------|------|
-| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.5-release.apk` |
-| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` |
+| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.6-release.apk` |
+| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` (1.0.5, unchanged) |
 
 | Identifier | Value |
 |------------|-------|
 | Application ID | `com.yueer.shengyue` |
-| Android version name | `1.0.5` |
-| Android version code | `51` |
-| Windows package version | `1.0.5` |
+| Android version name | `1.0.6` |
+| Android version code | `52` |
+| Windows package version | `1.0.5` (unchanged) |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## Download and Install
 
-1.0.5 release page (Android + Windows): **[YueErShengYue 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)**
+1.0.6 release page (Android APK only): **[YueErShengYue 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)**
 
-Older release page: **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+Older release pages: **[YueErShengYue 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
 Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
@@ -39,12 +39,12 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | Platform | Download |
 |----------|----------|
-| Android | [YueErShengYue-1.0.5-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-1.0.5-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) |
+| Android | [YueErShengYue-1.0.6-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-1.0.6-release.apk) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) (1.0.5, unchanged) |
 
 ### Android
 
-1. Download `YueErShengYue-1.0.5-release.apk`.
+1. Download `YueErShengYue-1.0.6-release.apk`.
 2. Verify the SHA-256 checksum below.
 3. Open the APK on the device. If Android requests permission to install apps from this source, enable it in system settings.
 4. Launch YueErShengYue, select a language, enter the Audiobookshelf server address and account credentials, then sign in.
@@ -62,8 +62,8 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.5-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
-| `YueErShengYue-1.0.4-release.apk` (older) | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
+| `YueErShengYue-1.0.6-release.apk` | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
+| `YueErShengYue-1.0.5-release.apk` (older) | `a11508fb3c03e302399da2e9012c782579115c78dcc3e8fa2460478973ab14b3` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` (older) | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` (older) | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
@@ -71,11 +71,22 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 PowerShell example:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.5-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.6-release.apk
 Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 ```
 
 Install or run the package after its calculated hash matches the corresponding value above.
+
+---
+
+## What's New in 1.0.6
+
+### Android
+
+- **Fixed unstable Bluetooth connections (drop + auto-reconnect)**: 1.0.5's "Bluetooth/head-unit album art" feature inlined raw cover bytes (up to 2 MB) into the media notification; oversized Bitmaps forwarded through system UI and Bluetooth AVRCP can disrupt the media session, showing up as repeated Bluetooth disconnect/reconnect cycles. The fix downscales the inlined notification cover to ≤256 px JPEG (~15–60 KB), version-bumps the cover cache to v2 (discarding stale raw-image entries), and removes a per-rebuild full-canvas redraw in the notification icon pipeline.
+- **Playback framework upgrade**: Media3 1.5.1 → 1.9.4, picking up the intervening media-notification/session fixes (same-bitmap re-compression, stale foreground-service intents, Bluetooth headset key handling, etc.).
+- **Version code fix**: `versionCode` 51 → **52** (1.0.5 and the earlier 1.0.6 build shared 51; installs now upgrade correctly).
+- Verified on a real device with a Bluetooth headset: 1 hour of continuous playback, zero disconnects. Pausing on Bluetooth disconnect is standard system behavior; this fix targets the abnormal repeated drop/reconnect loop.
 
 ---
 
@@ -225,7 +236,9 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
-| **1.0.4** | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets; Windows portable synced to 1.0.4 (mpv engine, mini-player fixes, close-to-tray, clean exit) |
+| **1.0.6** | Android-only update: fixed unstable Bluetooth connections (drop + auto-reconnect; downscaled notification artwork + Media3 1.9.4), `versionCode` 52 |
+| 1.0.5 | Android and Windows synchronized update: faster tap-to-play, Bluetooth/head-unit album art, database alignment on Android; chapter-end stall fix, volume control and mpv bundle on Windows |
+| 1.0.4 | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets; Windows portable synced to 1.0.4 (mpv engine, mini-player fixes, close-to-tray, clean exit) |
 | **1.0.3** | Android-only update: home auto-load + cached first re-entry, recommended/recently-added stale cache fix, player auto-reconnect, Continue Listening / Listen Again response + cold-start session latch fix |
 | 1.0.1 | Android-only update: four themes, glass UI polish, floating dock, speed dialog refinements, sound enhancement default-on, loading/stability work |
 | 1.0.0 | Android and Windows synchronized launch; Windows wheel consistency; stability and performance refinements |

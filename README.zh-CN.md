@@ -6,7 +6,7 @@
 
 **悦耳声阅**是一款面向 **Android 与 Windows** 的 [Audiobookshelf](https://www.audiobookshelf.org/) 客户端，提供简洁的有声书体验，包括流媒体播放、书库浏览与进度同步。
 
-**当前稳定版：1.0.5**（Android 与 Windows 同步）— Android `versionCode` 为 **51**。Windows 便携版同步更新至 **1.0.5**，另提供内置 mpv 的懒人包。
+**当前稳定版：1.0.6**（Android）— Android `versionCode` 为 **52**。本版本仅发布 Android APK；Windows 便携版维持 **1.0.5**（另提供内置 mpv 的懒人包），无需更新。
 
 ---
 
@@ -14,24 +14,22 @@
 
 | 平台 | 软件包 | 系统要求 | 文件名 |
 |------|--------|----------|--------|
-| **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.5-release.apk` |
-| **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` |
+| **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.6-release.apk` |
+| **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip`（1.0.5，无改动） |
 
 | 标识 | 值 |
 |------|----|
 | applicationId / 包名 | `com.yueer.shengyue` |
-| Android 版本名称 | `1.0.5` |
-| Android 版本代码 | `51` |
-| Windows 包版本 | `1.0.5` |
+| Android 版本名称 | `1.0.6` |
+| Android 版本代码 | `52` |
+| Windows 包版本 | `1.0.5`（无改动） |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## 下载与安装
 
-1.0.5 正式发布页（Android + Windows）：**[悦耳声阅 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)**
-
-旧版发布页：**[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+1.0.6 正式发布页（仅 Android APK）：**[悦耳声阅 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)**
 
 旧版发布页：**[悦耳声阅 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
@@ -41,12 +39,12 @@
 
 | 平台 | 下载 |
 |------|------|
-| Android | [YueErShengYue-1.0.5-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-1.0.5-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) |
+| Android | [YueErShengYue-1.0.6-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-1.0.6-release.apk) |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip)（1.0.5，无改动） |
 
 ### Android
 
-1. 下载 `YueErShengYue-1.0.5-release.apk`。
+1. 下载 `YueErShengYue-1.0.6-release.apk`。
 2. 使用下方 SHA-256 校验文件。
 3. 在设备上打开 APK；若 Android 请求授权此来源安装应用，请在系统设置中允许。
 4. 启动悦耳声阅，选择语言，填写 Audiobookshelf 服务器地址和账号信息，然后登录。
@@ -64,8 +62,8 @@
 
 | 文件 | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.5-release.apk` | `2d48262e63e0eb8d2460820ce798a13993e14a03ec679dbadecae343101ef327` |
-| `YueErShengYue-1.0.4-release.apk`（旧版） | `1e4e3b59eff26790403e2fcc6ae57f046d50410965208d555fdd047c73f97970` |
+| `YueErShengYue-1.0.6-release.apk` | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
+| `YueErShengYue-1.0.5-release.apk`（旧版） | `a11508fb3c03e302399da2e9012c782579115c78dcc3e8fa2460478973ab14b3` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip`（旧版） | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip`（旧版） | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
@@ -73,11 +71,22 @@
 PowerShell 示例：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.5-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.6-release.apk
 Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 ```
 
 计算结果与上表对应值一致后，再安装或运行软件包。
+
+---
+
+## 1.0.6 更新内容
+
+### Android
+
+- **修复蓝牙连接不稳定（断开再自连）**：1.0.5 的"蓝牙/车机专辑封面"功能将原始封面字节（最大 2 MB）内嵌进媒体通知，超大位图经系统界面与蓝牙 AVRCP 转发时扰乱媒体会话，表现为蓝牙反复断开又自动重连。本次修复：通知内嵌封面统一降采样为 ≤256 px JPEG（约 15–60 KB），封面缓存升级为 v2 并弃用旧版大图缓存，通知图标合成不再每次整图重绘。
+- **播放框架升级**：Media3 1.5.1 → 1.9.4，纳入期间修复的媒体通知/会话缺陷（同一 Bitmap 重复压缩、过期前台服务 Intent、蓝牙耳机按键处理等）。
+- **版本代码修正**：`versionCode` 51 → **52**（1.0.5 与旧 1.0.6 构建同为 51，本次起可正常覆盖安装）。
+- 真机蓝牙耳机连续播放 1 小时验证：无断连。蓝牙断开后播放自动暂停/恢复属于系统标准行为，本次修复针对的是异常的**反复断连**。
 
 ---
 
@@ -227,6 +236,9 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 
 | 版本 | 摘要 |
 |------|------|
+| **1.0.6** | 仅 Android 更新：修复蓝牙连接不稳定（断开再自连，通知封面降采样 + Media3 1.9.4），`versionCode` 52 |
+| 1.0.5 | Android 与 Windows 同步更新：Android 点按播放提速、蓝牙/车机专辑封面、数据库对齐；Windows 修复播完一章即停、新增音量控件与 mpv 懒人包 |
+| 1.0.4 | Android 性能与体验优化：缓存优先加载、首次进入修复、毛玻璃 Dock、导航栏适配；Windows 便携版首次同步至 1.0.4（mpv 引擎、迷你播放器修复、托盘最小化、退出清理） |
 | **1.0.3** | 仅 Android 更新：首页自动加载 + 缓存优先二次进入、推荐/最近添加旧缓存修复、播放器自动重连、继续播放/再次收听响应与冷启动会话闩锁修复 |
 | 1.0.1 | 仅 Android 更新：四主题、毛玻璃与悬浮 Dock 打磨、倍速弹窗优化、声音增强默认开启、加载与稳定性提升 |
 | 1.0.0 | Android 与 Windows 同步首发；统一 Windows 滚轮体验；稳定性与性能优化 |
