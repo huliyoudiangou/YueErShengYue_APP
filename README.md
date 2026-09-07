@@ -62,7 +62,7 @@ Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoud
 
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.7-release.apk` | `490333f23dd88fd4e17f25ec6950b2186cdbbab45e1e4b43a7c6270ae2518190` |
+| `YueErShengYue-1.0.7-release.apk` | `6082442cd4192753215e14dd5acc82789f4bf16841e5d563bd00d038b07ea0a5` |
 | `YueErShengYue-1.0.6-release.apk` (older) | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
 | `YueErShengYue-1.0.5-release.apk` (older) | `a11508fb3c03e302399da2e9012c782579115c78dcc3e8fa2460478973ab14b3` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
@@ -84,8 +84,7 @@ Install or run the package after its calculated hash matches the corresponding v
 
 ### Android
 
-- **Bluetooth stability fix (drop + auto-reconnect)**: 1.0.5 introduced inlined cover bytes into the media session for AVRCP album art; 1.0.6 downscaled them, but the payload still travels through the media session on every track. On some Bluetooth stacks (e.g. Redmi K90 with BT speakers/headphones) that still produces repeated disconnect/reconnect cycles. 1.0.7 stops shipping inlined artwork bytes entirely by default — the session now carries only the cover URI, which the in-app notification loads normally.
-- **New setting "Bluetooth album art" (default OFF)**: if your Bluetooth device still wants cover art on the head unit, you can re-enable the small inlined payload from Settings. Off by default because the payload itself is what triggers the drop/reconnect loop on affected devices.
+- **Bluetooth stability fix (drop + auto-reconnect)**: the "Bluetooth/head-unit album art" feature from 1.0.5 is **removed entirely**. It inlined cover bytes into the media session for AVRCP artwork; even the downscaled payload from 1.0.6 still travels through the media session on every track and caused repeated disconnect/reconnect cycles on some Bluetooth stacks (e.g. Redmi K90 with BT speakers/headphones). The media session now carries only the cover URI again (like 1.0.4) — no artwork bytes are ever inlined. In-app notification covers are unaffected.
 - **Volume boost stabilization**: the system LoudnessEnhancer is now attached exactly once per audio session instead of being re-created on every audio-session change. Effect attach/detach churn is itself a known A2DP disturbance on some Bluetooth stacks, so this removes another potential trigger of the drop/reconnect loop.
 - **Version**: `versionCode` **53**.
 
@@ -248,7 +247,7 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
-| **1.0.7** | Android-only update: Bluetooth stability fix (no inlined artwork bytes by default; opt-in "Bluetooth album art" setting; stable single volume-boost attachment), `versionCode` 53 |
+| **1.0.7** | Android-only update: Bluetooth stability fix (1.0.5's Bluetooth album-art feature fully removed — no inlined artwork bytes; stable single volume-boost attachment), `versionCode` 53 |
 | **1.0.6** | Android-only update: fixed unstable Bluetooth connections (drop + auto-reconnect; downscaled notification artwork + Media3 1.9.4), `versionCode` 52 |
 | 1.0.5 | Android and Windows synchronized update: faster tap-to-play, Bluetooth/head-unit album art, database alignment on Android; chapter-end stall fix, volume control and mpv bundle on Windows |
 | 1.0.4 | Android performance and UX: cache-first loading, first-entry fixes, frosted dock, navigation-bar insets; Windows portable synced to 1.0.4 (mpv engine, mini-player fixes, close-to-tray, clean exit) |
