@@ -62,7 +62,7 @@
 
 | 文件 | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.7-release.apk` | `6082442cd4192753215e14dd5acc82789f4bf16841e5d563bd00d038b07ea0a5` |
+| `YueErShengYue-1.0.7-release.apk` | `0f8f0530096c280e68c12351d36e2b2b58f5dbe8804cfc43bc0a29aec8916f3b` |
 | `YueErShengYue-1.0.6-release.apk`（旧版） | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
 | `YueErShengYue-1.0.5-release.apk`（旧版） | `a11508fb3c03e302399da2e9012c782579115c78dcc3e8fa2460478973ab14b3` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
