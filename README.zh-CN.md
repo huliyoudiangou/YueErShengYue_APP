@@ -6,7 +6,7 @@
 
 **悦耳声阅**是一款面向 **Android 与 Windows** 的 [Audiobookshelf](https://www.audiobookshelf.org/) 客户端，提供简洁的有声书体验，包括流媒体播放、书库浏览与进度同步。
 
-**当前稳定版：1.0.6**（Android）— Android `versionCode` 为 **52**。本版本仅发布 Android APK；Windows 便携版维持 **1.0.5**（另提供内置 mpv 的懒人包），无需更新。
+**当前稳定版：1.0.7**（Android）— Android `versionCode` 为 **53**。本版本仅发布 Android APK；Windows 便携版维持 **1.0.5**（另提供内置 mpv 的懒人包），无需更新。
 
 ---
 
@@ -14,14 +14,14 @@
 
 | 平台 | 软件包 | 系统要求 | 文件名 |
 |------|--------|----------|--------|
-| **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.6-release.apk` |
+| **Android** | 正式签名 APK | Android 8.0+（API **26**），`targetSdk` **35** | `YueErShengYue-1.0.7-release.apk` |
 | **Windows** | x86_64 便携包 | 64 位 Windows；内置运行时 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip`（1.0.5，无改动） |
 
 | 标识 | 值 |
 |------|----|
 | applicationId / 包名 | `com.yueer.shengyue` |
-| Android 版本名称 | `1.0.6` |
-| Android 版本代码 | `52` |
+| Android 版本名称 | `1.0.7` |
+| Android 版本代码 | `53` |
 | Windows 包版本 | `1.0.5`（无改动） |
 | Android minSdk / targetSdk | **26** / **35** |
 
@@ -29,9 +29,9 @@
 
 ## 下载与安装
 
-1.0.6 正式发布页（仅 Android APK）：**[悦耳声阅 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)**
+1.0.7 正式发布页（仅 Android APK）：**[悦耳声阅 1.0.7](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.7)**
 
-旧版发布页：**[悦耳声阅 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
+旧版发布页：**[悦耳声阅 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)** · **[悦耳声阅 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[悦耳声阅 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
 
 旧版 Windows 1.0.0 软件包：**[悦耳声阅 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
 
@@ -39,12 +39,12 @@
 
 | 平台 | 下载 |
 |------|------|
-| Android | [YueErShengYue-1.0.6-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.6/YueErShengYue-1.0.6-release.apk) |
+| Android | [YueErShengYue-1.0.7-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.7/YueErShengYue-1.0.7-release.apk) |
 | Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip)（1.0.5，无改动） |
 
 ### Android
 
-1. 下载 `YueErShengYue-1.0.6-release.apk`。
+1. 下载 `YueErShengYue-1.0.7-release.apk`。
 2. 使用下方 SHA-256 校验文件。
 3. 在设备上打开 APK；若 Android 请求授权此来源安装应用，请在系统设置中允许。
 4. 启动悦耳声阅，选择语言，填写 Audiobookshelf 服务器地址和账号信息，然后登录。
@@ -62,7 +62,8 @@
 
 | 文件 | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.6-release.apk` | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
+| `YueErShengYue-1.0.7-release.apk` | `490333f23dd88fd4e17f25ec6950b2186cdbbab45e1e4b43a7c6270ae2518190` |
+| `YueErShengYue-1.0.6-release.apk`（旧版） | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
 | `YueErShengYue-1.0.5-release.apk`（旧版） | `a11508fb3c03e302399da2e9012c782579115c78dcc3e8fa2460478973ab14b3` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
 | `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip`（旧版） | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
@@ -71,11 +72,22 @@
 PowerShell 示例：
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.6-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.7-release.apk
 Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 ```
 
 计算结果与上表对应值一致后，再安装或运行软件包。
+
+---
+
+## 1.0.7 更新内容
+
+### Android
+
+- **修复蓝牙断连（断开再自连）**：1.0.5 起媒体会话在每一条音轨上内嵌封面字节供 AVRCP 车机/耳机显示封面；1.0.6 已把封面降采样，但内嵌字节仍会随媒体会话下发。在部分蓝牙设备组合（如红米 K90 配蓝牙音箱/耳机）上仍会表现为反复断连重连。1.0.7 起默认**不再内嵌任何封面字节**，媒体会话只携带封面 URL，应用内通知仍可正常显示封面。
+- **新增设置项「蓝牙专辑封面」（默认关闭）**：如你的蓝牙设备确实需要车机封面，可在设置中手动开启小尺寸内嵌封面。默认关闭——内嵌封面本身正是受影响设备上断连循环的诱因。
+- **声音增强稳定性**：系统响度增强（LoudnessEnhancer）改为每个音频会话只挂载一次，不再在每次音频会话变化时反复重建。效果器的反复挂载/卸载在部分蓝牙协议栈上本身就会扰动 A2DP 音频流，本次一并移除该诱因。
+- **版本**：`versionCode` **53**。
 
 ---
 
@@ -236,6 +248,7 @@ Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
 
 | 版本 | 摘要 |
 |------|------|
+| **1.0.7** | 仅 Android 更新：修复蓝牙断连（默认不再内嵌封面字节；新增可选「蓝牙专辑封面」开关；声音增强改为单次稳定挂载），`versionCode` 53 |
 | **1.0.6** | 仅 Android 更新：修复蓝牙连接不稳定（断开再自连，通知封面降采样 + Media3 1.9.4），`versionCode` 52 |
 | 1.0.5 | Android 与 Windows 同步更新：Android 点按播放提速、蓝牙/车机专辑封面、数据库对齐；Windows 修复播完一章即停、新增音量控件与 mpv 懒人包 |
 | 1.0.4 | Android 性能与体验优化：缓存优先加载、首次进入修复、毛玻璃 Dock、导航栏适配；Windows 便携版首次同步至 1.0.4（mpv 引擎、迷你播放器修复、托盘最小化、退出清理） |
