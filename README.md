@@ -4,9 +4,11 @@
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-**YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on a clean audiobook experience with streaming playback, library browsing, and progress synchronization.
+**YueErShengYue** is an [Audiobookshelf](https://www.audiobookshelf.org/) client for **Android and Windows**, focused on audiobook streaming, library browsing, progress synchronization, and cross-platform favorites.
 
-**Current stable release: 1.0.7** (Android) — Android `versionCode` **53**. This release ships an Android APK only; the Windows portable package stays at **1.0.5** (all-in-one bundle with mpv included) and needs no update.
+**Current stable release: 1.0.8 — Android + Windows.** Android `versionCode` **55**. This release improves loading and stability on both platforms and adds favorite synchronization. Windows is available as a standard portable package and an **all-in-one bundle with mpv**.
+
+> This repository contains documentation, screenshots, and release packages only; no application source code is published.
 
 ---
 
@@ -14,69 +16,102 @@
 
 | Platform | Package | Requirements | File |
 |----------|---------|--------------|------|
-| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35** | `YueErShengYue-1.0.7-release.apk` |
-| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime | `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` (1.0.5, unchanged) |
+| **Android** | Signed release APK | Android 8.0+ (API **26**), `targetSdk` **35**, ARM32 / ARM64 | `YueErShengYue-1.0.8-release.apk` |
+| **Windows** | x86_64 portable package | 64-bit Windows; bundled runtime; mpv installed or configured separately | `YueErShengYue-Windows-x86_64-Portable-1.0.8.zip` |
+| **Windows (recommended)** | All-in-one portable package | 64-bit Windows; runtime and mpv included | `YueErShengYue-Windows-x86_64-Portable-1.0.8-with-mpv.zip` |
 
 | Identifier | Value |
 |------------|-------|
 | Application ID | `com.yueer.shengyue` |
-| Android version name | `1.0.7` |
-| Android version code | `53` |
-| Windows package version | `1.0.5` (unchanged) |
+| Android version name | `1.0.8` |
+| Android version code | `55` |
+| Windows package version | `1.0.8` |
 | Android minSdk / targetSdk | **26** / **35** |
 
 ---
 
 ## Download and Install
 
-1.0.7 release page (Android APK only): **[YueErShengYue 1.0.7](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.7)**
+Official release page: **[YueErShengYue 1.0.8](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.8)** — bilingual release notes and all three packages.
 
-Older release pages: **[YueErShengYue 1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6)** · **[YueErShengYue 1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5)** · **[YueErShengYue 1.0.4](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.4)**
-
-Older Windows 1.0.0 package: **[YueErShengYue 1.0.0](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.0)**
+Older releases: [1.0.7](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.7) · [1.0.6](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.6) · [1.0.5](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/tag/v1.0.5) · [All releases](https://github.com/huliyoudiangou/YueErShengYue_APP/releases).
 
 ### Direct Downloads
 
-| Platform | Download |
-|----------|----------|
-| Android | [YueErShengYue-1.0.7-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.7/YueErShengYue-1.0.7-release.apk) |
-| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.5.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.5/YueErShengYue-Windows-x86_64-Portable-1.0.5.zip) (1.0.5, unchanged) |
+| Platform | Download | Size |
+|----------|----------|------|
+| Android | [YueErShengYue-1.0.8-release.apk](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.8/YueErShengYue-1.0.8-release.apk) | 3.16 MB |
+| Windows x86_64 | [YueErShengYue-Windows-x86_64-Portable-1.0.8.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.8/YueErShengYue-Windows-x86_64-Portable-1.0.8.zip) | 61.93 MB |
+| Windows x86_64 **with mpv** | [YueErShengYue-Windows-x86_64-Portable-1.0.8-with-mpv.zip](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.8/YueErShengYue-Windows-x86_64-Portable-1.0.8-with-mpv.zip) | 110.68 MB |
 
 ### Android
 
-1. Download `YueErShengYue-1.0.7-release.apk`.
-2. Verify the SHA-256 checksum below.
-3. Open the APK on the device. If Android requests permission to install apps from this source, enable it in system settings.
-4. Launch YueErShengYue, select a language, enter the Audiobookshelf server address and account credentials, then sign in.
+1. Download the APK and verify its SHA-256 below.
+2. Open it on the device; grant permission to install from this source if Android asks.
+3. Existing users can install over the previous signed version. This build also upgrades the earlier Android-only 1.0.8 build (code 54).
+4. New users: choose a language, enter the Audiobookshelf server address and credentials, and sign in.
 
 ### Windows Portable
 
-1. Download `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` from the **1.0.5** release, or pick the all-in-one bundle `YueErShengYue-Windows-x86_64-Portable-1.0.5-with-mpv.zip` with mpv bundled (no separate mpv install needed; the Windows 1.0.0 package remains available on the 1.0.0 release page).
-2. Verify the SHA-256 checksum below.
-3. Extract the archive to a local folder, preferably one with a short path and standard write permissions.
-4. Run `YueErShengYue.exe`. Keep the bundled `app/`, `runtime/`, and related files in their original relative structure.
+1. Download the **with-mpv bundle** for an all-in-one setup, or the standard package if mpv is already installed/configured.
+2. Verify the checksum and exit the old app, including its tray instance.
+3. Extract the whole archive to a new local folder. Keep `app/`, `runtime/`, and, for the bundle, `mpv/` next to `YueErShengYue.exe`.
+4. Run `YueErShengYue.exe`. Existing settings remain in `%APPDATA%\YueErShengYue`; do not share that data directory.
+5. If a custom mpv path was saved previously, switch to automatic detection in Settings to use the bundled player.
+
+The Windows EXE is not Authenticode-signed; verify the checksum before running it.
+
+### Sync Existing Favorites — Important
+
+- Upgrade **both clients** to this 1.0.8 sync release and sign in to the **same Audiobookshelf server and user account**.
+- On **each client**, open **Settings → Favorite sync → Import old local favorites**. This merges old favorites into the current account and preserves the original local data; no automatic upload of unscoped legacy favorites occurs.
+- New additions/removals sync through the account's private `YueEr Favorites` playlist. Offline changes are saved for retry; foreground checks run about every 30 seconds, or use **Sync now**.
+- No extra server is required. Keep the `yueer:favorites:v1` marker in the playlist description. Sync is not guaranteed while apps are closed; conflicting offline edits to one book converge by the last operation successfully applied on the server.
 
 ---
 
 ## SHA-256 Verification
 
+Download [SHA256SUMS-1.0.8.txt](https://github.com/huliyoudiangou/YueErShengYue_APP/releases/download/v1.0.8/SHA256SUMS-1.0.8.txt), or compare against this table:
+
 | File | SHA-256 |
 |------|---------|
-| `YueErShengYue-1.0.7-release.apk` | `0f8f0530096c280e68c12351d36e2b2b58f5dbe8804cfc43bc0a29aec8916f3b` |
-| `YueErShengYue-1.0.6-release.apk` (older) | `1dbae496056e8fcf770e2e4339aecea3f7807eae6369f32bf17ae8f15a07a619` |
-| `YueErShengYue-1.0.5-release.apk` (older) | `a11508fb3c03e302399da2e9012c782579115c78dcc3e8fa2460478973ab14b3` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.5.zip` | `E65EA0B1DB95299B7AFD92810D98516576674E58E110949B4959C588E87ABC06` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.4.zip` (older) | `5575FA43EDE770E3EE49AA5F80A26B94E5F44837D83F02FC8446FD1D2E45B17D` |
-| `YueErShengYue-Windows-x86_64-Portable-1.0.0.zip` (older) | `090048DDAC795419FD06210C1DADD123CD9358397737122B63CF68E20506C7E1` |
-
-PowerShell example:
+| `YueErShengYue-1.0.8-release.apk` | `6d76b9db4b722275e39f4b05b0ae57e43d940fe1ee19a9dcf8bf414efbd8509d` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.8.zip` | `e10b7e6cef709fd5679cc6f9685881bc7bdf3d66f87492aaf7a2b4d6f6cebc68` |
+| `YueErShengYue-Windows-x86_64-Portable-1.0.8-with-mpv.zip` | `1ef7213b422f5aa5525722ebbf10c4f4eae8df14288df39ece3bf572307be797` |
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.7-release.apk
-Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.5.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-1.0.8-release.apk
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.8.zip
+Get-FileHash -Algorithm SHA256 .\YueErShengYue-Windows-x86_64-Portable-1.0.8-with-mpv.zip
 ```
 
-Install or run the package after its calculated hash matches the corresponding value above.
+For older-package checksums, refer to the corresponding release page.
+
+---
+
+## What's New in 1.0.8
+
+### Android
+
+- Off-main-thread settings and player-cache warm-up; independently loaded home shelves and short-lived detail caching.
+- Fixed stale search/page results, overlapping refresh/pagination, repeated-page requests, and retry loops; bounded load timeouts.
+- Server/account-scoped atomic snapshots, service-owned stream-cache clearing, bounded cover decoding, and safer authentication on redirects.
+- Less hidden-page polling and large-book prefetch work; retains 1.0.7's URI-only media artwork and volume-boost behavior.
+- Version **1.0.8**, `versionCode: 55`, with the existing release signing identity.
+
+### Windows
+
+- Stable application-graph lifecycle, asynchronous playback warm-up, and one instance per data profile.
+- Consistent library pagination, cancellable/bounded search, scoped shelf/detail caches, and fewer duplicate requests.
+- Server/account/size-scoped cover caches; bounded download/decoding and memory use; header-only authentication with redirect checks.
+- Coalesced volume persistence, reduced hidden-window activity, standard and mpv-bundled portable packages.
+
+### Both Clients
+
+- Private-playlist favorite synchronization, offline pending operations, explicit legacy import, status display, and manual retry.
+- **136 unit tests passed**; Android Lint **0 errors** (49 warnings remain). Signing, 16 KB alignment, packaged Windows playback, and two-way favorite tests passed.
+- Cross-client validation used an isolated local fixture. Real-server, device-specific, and long-session testing remains recommended; no universal percentage speed-up is claimed.
 
 ---
 
@@ -182,6 +217,7 @@ Install or run the package after its calculated hash matches the corresponding v
 ### Library and Discovery
 
 - Home sections for Continue Listening, Recently Added, Recommendations, Listen Again, and Favorites.
+- Android/Windows favorite sync for the same ABS account, with offline pending changes and explicit legacy import.
 - Cover-grid library browsing, sorting, filtering, and global search.
 - Book details with cover art, narrator, description, chapters, and playback controls.
 - Daily recommendation refresh with local caching and manual refresh.
@@ -247,6 +283,7 @@ Screenshots may reflect a different theme or language depending on the device co
 
 | Version | Summary |
 |---------|---------|
+| **1.0.8** | Android + Windows loading/stability optimization and private-playlist favorite sync; standard and mpv-bundled Windows packages; Android `versionCode` 55 |
 | **1.0.7** | Android-only update: Bluetooth stability fix (1.0.5's Bluetooth album-art feature fully removed — no inlined artwork bytes; stable single volume-boost attachment), `versionCode` 53 |
 | **1.0.6** | Android-only update: fixed unstable Bluetooth connections (drop + auto-reconnect; downscaled notification artwork + Media3 1.9.4), `versionCode` 52 |
 | 1.0.5 | Android and Windows synchronized update: faster tap-to-play, Bluetooth/head-unit album art, database alignment on Android; chapter-end stall fix, volume control and mpv bundle on Windows |
